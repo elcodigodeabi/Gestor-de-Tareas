@@ -1,0 +1,33 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Asignar Tarea</h4>
+    </div>
+    <div class="modal-body">
+      <div class="title" data-testid="tareaDescripcion">{{tarea ? tarea.descripcion : ""}}</div>
+
+      <form name="asignarTareaForm" role="form">
+        <fieldset>
+          <div class="form-group">
+            <label for="asignatario">Asignado a</label>
+            <select data-testid="asignatario" name="asignatario" class="form-control" [(ngModel)]="asignatario">
+              @for (usuario of usuariosPosibles; track usuario) {
+                <option [ngValue]="usuario">{{usuario.nombre}}</option>
+              }
+            </select>
+          </div>
+          <div class="example-animate-container" style="padding-top:10px">
+            @for (error of errors; track error) {
+              <div class="alert alert-danger animate-repeat">{{error}}</div>
+            }
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-testid="cerrar" (click)="navegarAHome()">Cerrar</button>
+      <button type="button" class="btn btn-primary" data-testid="guardar" (click)="asignar()">Guardar</button>
+    </div>
+  </div>
+</div>
