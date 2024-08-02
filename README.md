@@ -2,9 +2,10 @@
 
 # Tareas de un equipo de desarrollo
 
-[![Build](https://github.com/uqbar-project/eg-tareas-angular/actions/workflows/build.yml/badge.svg)](https://github.com/uqbar-project/eg-tareas-angular/actions/workflows/build.yml) [![codecov](https://codecov.io/gh/uqbar-project/eg-tareas-angular/graph/badge.svg?token=0BAJTi6FpK)](https://codecov.io/gh/uqbar-project/eg-tareas-angular)
+en uno de mis proyectos personales decidi desarrollar un software de gestion de tareas similiar a trello usando angular
 
 ![demo](videos/demo.gif)
+cortesia de un deploy de un compañero 
 
 Este ejemplo se basa en el seguimiento de tareas de un equipo de desarrollo y permite mostrar una aplicación completa en Angular con los siguientes conceptos
 
@@ -19,11 +20,11 @@ Este ejemplo se basa en el seguimiento de tareas de un equipo de desarrollo y pe
 
 ## Levantar el backend
 
-Pueden descargar [la implementación Spring Boot del backend](https://github.com/uqbar-project/eg-tareas-springboot-kotlin). En el README encontrarán información de cómo levantar el servidor en el puerto 9000.
+ En el README encontrarán información de cómo levantar el servidor en el puerto 9000.
 
 ## Componentes adicionales
 
-La instalación de los componentes adicionales luego de hacer `ng new eg-tareas-angular --routing` requiere instalar dependencias adicionales. El ejemplo trabaja con Bootstrap y [font awesome para Angular](https://github.com/FortAwesome/angular-fontawesome) principalmente.
+La instalación de los componentes adicionales luego de hacer `ng new eg-tareas-angular --routing` requiere instalar dependencias adicionales. El ejemplo trabaja con Bootstrap y [font awesome para Angular] principalmente.
 
 ```bash
 npm i @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons bootstrap
